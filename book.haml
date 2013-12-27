@@ -1,0 +1,23 @@
+%html
+  %body
+    .frontcover
+      %h1.no-toc Collected Sermons
+      %h2.no-toc By Alicia O'Brien
+      %h3.no-toc Volume I: 2003-2013
+
+    .titlepage(style="counter-reset: page 1")
+      %h1.no-toc Collected Sermons
+      %h2.no-toc By Alicia O'Brien
+      %h3.no-toc Volume I: 2003-2013
+
+    .imprint
+      %p Copyright &copy; 2005-2013 Alicia O'Brien
+
+    .toc
+      %h1 Table of Contents
+      != toc
+
+    %div(style="counter-reset: page 1")
+      - chapters.each do |chapter|
+        != chapter
+

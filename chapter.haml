@@ -1,0 +1,17 @@
+.chapter{id: id}
+  .chapter-heading
+    %h1= title
+    %h2= subtitle
+
+  .chapter-details
+    - locations.each do |location|
+      .location-time
+        .location= location.where
+        .time= location.when
+
+  - if passage
+    .chapter-passage
+      != passage
+
+  .chapter-body
+    != body

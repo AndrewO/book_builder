@@ -1,0 +1,4 @@
+%ul.toc
+  - items.each do |item|
+    %li{class: item.type}
+      %a{href: "##{item.ref}"}= item.name
